@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var value = 0
+    var value = 1
     @IBOutlet weak var labelInView: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
