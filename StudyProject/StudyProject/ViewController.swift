@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         value += 1
         labelInView.backgroundColor = UIColor.blue
         labelInView.text = "Sergei = \(value + 1)"
-        
+        // comment
         
     }
     
