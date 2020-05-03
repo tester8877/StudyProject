@@ -129,13 +129,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="button9Action:" destination="TW7-le-Se4" eventType="touchUpInside" id="OMk-lD-YhD"/>
+                                    <action selector="button9:" destination="TW7-le-Se4" eventType="touchUpInside" id="be5-ap-KRg"/>
+                                    <action selector="button9Action:" destination="TW7-le-Se4" eventType="touchUpInside" id="GXQ-KF-tNB"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T72-sV-Ge4">
                                 <rect key="frame" x="39" y="176" width="94" height="107"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="button4Action:" destination="TW7-le-Se4" eventType="touchUpInside" id="pUm-IC-Lex"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IAL-SZ-7yr">
                                 <rect key="frame" x="160" y="184" width="94" height="107"/>

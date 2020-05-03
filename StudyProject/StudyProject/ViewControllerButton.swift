@@ -44,7 +44,7 @@ class ViewControllerButton: UIViewController {
     
   // 2 row ----------------------------------------------
     
-    @IBAction func button4(_ sender: Any) {
+    @IBAction func button4Action(_ sender: Any){
         button4.backgroundColor = UIColor.yellow
     }
     
@@ -81,8 +81,20 @@ class ViewControllerButton: UIViewController {
             print ("Buttons have different colors")
         }
         button9.backgroundColor = UIColor.blue
+    
+        if button3.backgroundColor == button6.backgroundColor{
+            button3.isHidden = true
+            button6.isHidden = true
+        }else{
+           print ("Buttons have different colors")
+        }
     }
     
-    
+    @IBAction func button9(_ sender: Any) {
+        if button9.backgroundColor == UIColor.blue{
+            button9.isHidden = true
+        }
+    }
+
     
 }
