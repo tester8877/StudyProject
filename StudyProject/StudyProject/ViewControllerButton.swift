@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewControllerButton: UIViewController {
+    //MARK: - Property
+    //var newArray : [Int] = []
+    var myArray = [Int]()
+    
+    
+    //MARK: - Outlet
     @IBOutlet weak var button1: UIButton!
     @IBOutlet weak var button2: UIButton!
     @IBOutlet weak var button3: UIButton!
@@ -22,14 +28,20 @@ class ViewControllerButton: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    //MARK: - Method
     
     // 1 row---------------------------------------------
     @IBAction func button1Action(_ sender: Any) {
         button1.backgroundColor = UIColor.yellow
+       myArray.append(Int(arc4random()))
+       print(myArray)
+        
     }
     
     @IBAction func button2Action(_ sender: Any) {
         button2.backgroundColor = UIColor.yellow
+        myArray.append(Int(arc4random()))
+        print(myArray)
     }
 
     @IBAction func button3Action(_ sender: Any) {
@@ -46,10 +58,14 @@ class ViewControllerButton: UIViewController {
     
     @IBAction func button4Action(_ sender: Any){
         button4.backgroundColor = UIColor.yellow
+        myArray.append(Int(arc4random()))
+        print(myArray)
     }
     
     @IBAction func button5Action(_ sender: Any) {
         button5.backgroundColor = UIColor.yellow
+        myArray.append(Int(arc4random()))
+        print(myArray)
     }
     
     @IBAction func button6Action(_ sender: Any) {
@@ -66,11 +82,15 @@ class ViewControllerButton: UIViewController {
     
     @IBAction func button7Action(_ sender: Any) {
         button7.backgroundColor = UIColor.yellow
+        myArray.append(Int(arc4random()))
+        print(myArray)
     }
     
     
     @IBAction func button8Action(_ sender: Any) {
         button8.backgroundColor = UIColor.yellow
+        myArray.append(Int(arc4random()))
+        print(myArray)
     }
     
     @IBAction func button9Action(_ sender: Any) {
@@ -85,16 +105,30 @@ class ViewControllerButton: UIViewController {
         if button3.backgroundColor == button6.backgroundColor{
             button3.isHidden = true
             button6.isHidden = true
+            
         }else{
            print ("Buttons have different colors")
         }
     }
     
     @IBAction func button9(_ sender: Any) {
-        if button9.backgroundColor == UIColor.blue{
-            button9.isHidden = true
+       var summ = 0
+        for item in myArray {
+            summ += item
         }
+       
+        summ % 2 == 0 ? print("True") : print("False")
+//        if summ % 2 == 0  {
+//
+//                  if button9.backgroundColor == UIColor.blue{
+//                     button9.isHidden = true
+//                  }
+//        } else {
+//            button1.isHidden = false
+//            button2.isHidden = false
+//        }
+        print("Summ  \(summ)")
+        
     }
-
     
 }
